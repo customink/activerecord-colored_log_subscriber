@@ -5,7 +5,7 @@ require 'activerecord/colored_log_subscriber/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "activerecord-colored_log_subscriber"
-  spec.version       = Activerecord::ColoredLogSubscriber::VERSION
+  spec.version       = ActiveRecord::ColoredLogSubscriber::VERSION
   spec.authors       = ["Ken Collins"]
   spec.email         = ["kcollins@customink.com"]
   spec.summary       = 'Colorized SQL Logging Backport for ActiveRecord'

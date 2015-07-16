@@ -1,4 +1,4 @@
-module Activerecord
+module ActiveRecord
   module ColoredLogSubscriber
     VERSION = "0.1.0"
   end

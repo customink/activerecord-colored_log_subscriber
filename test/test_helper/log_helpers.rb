@@ -23,6 +23,16 @@ module TestHelper
       log_lines.select { |line| line =~ pattern }
     end
 
+    def log_lines_matching!(pattern)
+      lines = log_lines_matching(pattern)
+      flunk "Found no log lines matching #{pattern.inspect} in #{log_lines.inspect}." if lines.empty?
+      lines
+    end
+
+    def assert_lines_colored(lines, color_name)
+      lines.each { |line| line.must_include color(color_name) }
+    end
+
     def clear_logs
       log.truncate 0
     end

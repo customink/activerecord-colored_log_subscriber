@@ -19,7 +19,7 @@ class CLSTestCase < Minitest::Spec
   private
 
   def color(name)
-    eval "ActiveSupport::LogSubscriber::#{name.to_s.upcase}"
+    ActiveSupport::LogSubscriber.const_get name.to_s.upcase.to_sym
   end
 
 end
