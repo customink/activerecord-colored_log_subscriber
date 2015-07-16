@@ -4,7 +4,7 @@ appraise 'activerecord32' do
 end
 
 appraise 'activerecord40' do
-  gem 'activerecord', '4.0.0'
+  gem 'activerecord', '~> 4.0.0'
 end
 
 appraise 'activerecord41' do
