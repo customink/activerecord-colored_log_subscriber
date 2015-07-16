@@ -16,7 +16,7 @@ module TestHelper
     end
 
     def log_lines
-      read_log.each_line.map { |line| line.tr("\u0000", '').squish }
+      read_log.each_line.map { |line| squish_string(line.tr("\u0000", '')) }
     end
 
     def log_lines_matching(pattern)
@@ -35,6 +35,13 @@ module TestHelper
 
     def clear_logs
       log.truncate 0
+    end
+
+    def squish_string(s)
+      s.gsub!(/\A[[:space:]]+/, '')
+      s.gsub!(/[[:space:]]+\z/, '')
+      s.gsub!(/[[:space:]]+/, ' ')
+      s
     end
 
   end
