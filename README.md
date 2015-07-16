@@ -12,7 +12,7 @@ https://github.com/rails/rails/pull/20607
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'activerecord-sqlcolor-logging'
+gem 'activerecord-colored_log_subscriber'
 ```
 
 And then execute:
@@ -24,7 +24,7 @@ $ bundle
 Or install it yourself as:
 
 ```
-$ gem install activerecord-sqlcolor-logging
+$ gem install activerecord-colored_log_subscriber
 ```
 
 ## Development
@@ -42,7 +42,7 @@ $ bundle exec appraisal activerecord32 rake test
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/customink/activerecord-sqlcolor-logging.
+Bug reports and pull requests are welcome on GitHub at https://github.com/customink/activerecord-colored_log_subscriber.
 
 
 ## License
