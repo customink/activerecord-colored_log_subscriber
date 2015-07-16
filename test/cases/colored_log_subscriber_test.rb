@@ -1,13 +1,12 @@
 require 'test_helper'
 
-class ColoredLogSubscriberTest < Minitest::Spec
+class ColoredLogSubscriberTest < CLSTestCase
 
-  it 'has a version number' do
-    assert Activerecord::ColoredLogSubscriber::VERSION
+  before { User.create }
+
+  it '' do
+    assert true
   end
 
-  it 'does something useful' do
-    assert false
-  end
 
 end
